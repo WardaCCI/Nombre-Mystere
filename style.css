@@ -1,0 +1,88 @@
+  body {
+      background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); /* Dégradé de couleur en arrière-plan */
+      font-family: 'Arial', sans-serif; /* Police de caractères */
+      display: flex; /* Utilise Flexbox pour le positionnement */
+      justify-content: center; /* Centre horizontalement */
+      align-items: center; /* Centre verticalement */
+      height: 100vh; /* Hauteur de 100% de la hauteur de la fenêtre du navigateur */
+      margin: 0; /* Pas de marge */
+  }
+
+  .game-container {
+      text-align: center; /* Centre le texte */
+      background-color: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent */
+      padding: 20px; /* Espace autour du contenu */
+      border-radius: 10px; /* Coins arrondis */
+      box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2); /* Ombre autour du conteneur */
+      width: 80%; /* Largeur de 80% de la largeur de la fenêtre du navigateur */
+      max-width: 800px; /* Largeur maximale de 800px */
+  }
+
+  h1 {
+      color: #007BFF; /* Couleur du titre */
+      margin-bottom: 20px; /* Espace sous le titre */
+  }
+
+  button {
+      padding: 15px 25px; /* Espace autour du texte du bouton */
+      font-size: 24px; /* Taille de la police du bouton */
+      text-transform: uppercase; /* Texte du bouton en majuscules */
+      letter-spacing: 2px; /* Espacement des lettres du bouton */
+      font-weight: bold; /* Texte du bouton en gras */
+      color: #f0f0f0; /* Couleur du texte du bouton */
+      background-color: #007BFF; /* Couleur de fond du bouton */
+      border: none; /* Pas de bordure autour du bouton */
+      border-radius: 50px; /* Coins arrondis du bouton */
+      box-shadow: 0 9px #999; /* Ombre sous le bouton */
+      outline: none; /* Pas de contour lorsque le bouton est sélectionné */
+      cursor: pointer; /* Curseur en forme de main lorsque la souris survole le bouton */
+      transition: all 0.3s ease; /* Transition douce lors du changement d'état du bouton */
+      margin-bottom: 20px; /* Espace sous le bouton */
+  }
+
+  button:hover {
+      background-color: #0069D9; /* Change la couleur de fond du bouton lorsque la souris survole le bouton */
+      transform: translateY(-3px); /* Déplace légèrement le bouton vers le haut lorsque la souris survole le bouton */
+  }
+
+  button:active {
+      background-color: #0062CC; /* Change la couleur de fond du bouton lorsque le bouton est enfoncé */
+      box-shadow: 0 5px #666; /* Réduit l'ombre sous le bouton lorsque le bouton est enfoncé */
+      transform: translateY(4px); /* Déplace légèrement le bouton vers le bas lorsque le bouton est enfoncé */
+  }
+
+  input {
+      padding: 10px; /* Espace autour du texte du champ de saisie */
+      font-size: 16px; /* Taille de la police du champ de saisie */
+      border-radius: 50px; /* Coins arrondis du champ de saisie */
+      border: 1px solid #007BFF; /* Bordure autour du champ de saisie */
+      width: 60%; /* Largeur de 60% de la largeur du conteneur */
+      margin-bottom: 20px; /* Espace sous le champ de saisie */
+  }
+
+  #gagnant {
+      display: none; /* Cache le champ de saisie du nom par défaut */
+  }
+  #message {
+      font-size: 20px; /* Taille de la police du message */
+      margin-bottom: 20px; /* Espace sous le message */
+      color: #007BFF; /* Couleur du message */
+      font-weight: bold; /* Texte du message en gras */
+  }
+
+  table {
+      border-collapse: collapse; /* Fusionne les bordures des cellules du tableau */
+      width: 100%; /* Largeur de 100% de la largeur du conteneur */
+      margin-top: 20px; /* Espace au-dessus du tableau */
+  }
+
+  table, th, td {
+      border: 1px solid #007BFF; /* Bordure autour des cellules du tableau */
+      padding: 10px; /* Espace autour du texte des cellules du tableau */
+      text-align: center; /* Centre le texte des cellules du tableau */
+  }
+
+  th {
+      background-color: #007BFF; /* Couleur de fond des en-têtes du tableau */
+      color: white; /* Couleur du texte des en-têtes du tableau */
+  }

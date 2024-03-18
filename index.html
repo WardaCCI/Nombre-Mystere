@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Le Nombre Mystère</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Lien vers le fichier CSS pour les styles -->
+</head>
+<body>
+    <div class="game-container"> <!-- Conteneur pour le jeu -->
+        <h1>Le Nombre Mystère</h1> <!-- Titre du jeu -->
+        <button onclick="commencerJeu()">GO</button> <!-- Bouton pour commencer le jeu -->
+        <input id="proposition" type="text" onkeydown="verifier(event)"> <!-- Champ de saisie pour la proposition de l'utilisateur -->
+        <div id="message"></div> <!-- Zone pour afficher les messages -->
+        <table id="hallOfFame"> <!-- Tableau pour le Hall of Fame -->
+            <tr>
+                <th>Rang</th>
+                <th>Nom</th>
+                <th>Nb</th>
+                <th>Temps</th>
+            </tr>
+            <!-- Les lignes du tableau seront ajoutées ici par le script (modifier si besoin ) -->
+        </table>
+        <div id="gagnant"> <!-- Zone pour le nom du gagnant -->
+            <span>Bravo, vous êtes dans les 10 meilleurs, entrez votre nom: </span>
+            <input id="nom" type="text" onkeydown="ajouterGagnant(event)"> <!-- Champ de saisie pour le nom du gagnant -->
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Lien vers le fichier JavaScript -->
+</body>
+</html>
